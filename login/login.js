@@ -43,7 +43,7 @@ $(document).ready( function() {
                 localStorage.setItem("Login",1);
                 $("#name_error").hide();
                 $("#name_error").addClass('no_error');
-                window.location = "../main.html"
+                window.location = "../index.html"
             } else {
                 $("#password").val("");
                 if($('#name_error').hasClass('no_error')){
