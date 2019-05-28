@@ -53,7 +53,7 @@ $(document).ready( function() {
         $("#login").removeClass("dropdown-toggle");
         $("#login").removeAttr("data-toggle");
         localStorage.setItem("Login",0);
-        window.location = "./main.html"
+        window.location = "./index.html"
     });
 
 
