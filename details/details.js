@@ -60,7 +60,7 @@ $(document).ready( function() {
 
     
     $("#HomeButton").click( function(){
-        window.location= "../main.html"
+        window.location= "../index.html"
 
     });
 
