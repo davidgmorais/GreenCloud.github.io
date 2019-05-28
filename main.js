@@ -44,7 +44,7 @@ $(document).ready( function() {
 
     $("#login").click(function() {
         if (login != 1) {
-            window.location = "login/index.html";
+            window.location = "./login";
         }
     });
 
