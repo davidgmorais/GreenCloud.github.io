@@ -11,14 +11,7 @@ let catalogo = [
         "place": "Onde há montanhas",
         "price": "Free",
         "img": "http://portalaventuras.pt/wp-content/uploads/Encosta_bebabdos.jpg",
-        "description": "É uma montanha, não ha muito que se lhe diga."
-    },
-    {
-        "name": "Batatas cozidas",
-        "place": "Onde há montanhas",
-        "price": "Free",
-        "img": "http://portalaventuras.pt/wp-content/uploads/Encosta_bebabdos.jpg",
-        "description": "É uma montanha, não ha muito que se lhe diga."
+        "description": "É uma montanha."
     }
 
 ]
