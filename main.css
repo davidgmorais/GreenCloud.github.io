@@ -1,0 +1,84 @@
+#main_background {
+  	background-image: url("./PlantsHeader.jpg");
+  	height: 100vh;
+	margin: 0;
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover ;
+}
+
+h1{
+    color: white;
+    font-size: 140px;
+    text-align: center;
+    transform: translate(0%, 35vh);
+    text-decoration: underline;
+
+}
+
+h4{
+    font-size: 30px;
+    color: white;
+    text-align: center;
+}
+
+#main_text{
+    background-color: #708C74;
+    height: 60vh;
+
+    padding-left: 20vw;
+    padding-right: 20vw;
+    padding-top: 25vh;
+}
+
+
+.btn {
+	letter-spacing: 1px;
+	text-decoration: none;
+	background: none;
+    -moz-user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 0;
+    cursor: pointer;
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+    white-space: nowrap;
+	font-size:16px;
+	line-height:20px;
+	font-weight:700;
+	text-transform:uppercase;
+	border: 3px solid;
+	padding:8px 20px;
+    margin-top: 1vh;
+    padding: 1vw;
+}
+
+.btn-outlined {
+    border-radius: 0;
+    -webkit-transition: all 0.3s;
+       -moz-transition: all 0.3s;
+            transition: all 0.3s;
+}
+
+
+.btn-outlined.btn-white {
+    background: none;
+    color: #FFFFFF;
+	border-color: #FFFFFF;
+}
+
+.btn-outlined.btn-white:hover,
+.btn-outlined.btn-white:active {
+    color: #708C74;
+    background: #FFFFFF;
+    border-color: #FFFFFF;
+}
+
+.option {
+    background-color: #708C74;
+    border: 3vw solid white;
+    height: 40vh;
+    padding-top: 12vh;
+}
