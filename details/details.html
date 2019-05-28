@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GreenCloud- Book a trip</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="icon" href="../GreenCloud_iconb.png">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/knockout/3.2.0/knockout-min.js"></script>
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="details.js"></script>
+	<link rel="stylesheet" type="text/css" href="details.css">
+
+</head>
+<body>
+	<div class="container" id="containerHeader">
+		<div class="row">
+			<div class="col-md-8">
+				<img id="header" src=""/>
+			</div>
+
+			<div class="col-md-4" style="background-color: #ebe7dd">
+				<div id="price" style="margin-top: 10%" >
+					<h3 class="headingTop text-center" style="margin-top: 20%; margin-bottom: 10%">Select Your Trip's Dates</h3>	
+
+					<div class="row align-items-center justify-content-center">
+						<p>Starting date: <input type="text" class="datepicker">   <i class="fas fa-calendar-alt"></i></p>
+					</div>
+					<div class="row align-items-center justify-content-center">
+							<p><i class="fas fa-arrow-down"></i></p>
+					</div>
+
+					<div class="row align-items-center justify-content-center">
+						<p>Ending date: <input type="text" class="datepicker">   <i class="fas fa-calendar-alt"></i></p>
+					</div>
+
+					<div>
+						<h3 id="PriceTag" style="text-align : right"></h3>
+					</div>
+
+					<button type="button" class="btn btn-success btn-lg" style="width: 100%; margin-top: 20%" id="booking"> Book the trip</button>
+
+
+				</div>
+				<div id="payment">
+					
+						<div class="headingWrap">
+								<h3 class="headingTop text-center" style="margin-top: 10%">Select Your Payment Method</h3>	
+						</div>
+						<div class="paymentWrap">
+							<div class="btn-group paymentBtnGroup btn-group-justified" data-toggle="buttons">
+					            <label class="btn paymentMethod active">
+					            	<div class="method visa"></div>
+					                <input type="radio" name="options" checked> 
+					            </label>
+					            <label class="btn paymentMethod">
+					            	<div class="method master-card"></div>
+					                <input type="radio" name="options"> 
+					            </label>
+					            <label class="btn paymentMethod">
+				            		<div class="method mbway"></div>
+					                <input type="radio" name="options">
+					            </label>
+					             <label class="btn paymentMethod">
+				             		<div class="method paypal"></div>
+					                <input type="radio" name="options"> 
+					            </label>
+					            
+					         
+					        </div>        
+						</div>
+						<div>
+								<button type="button" class="btn btn-success btn-lg" style="width: 100%; margin-top: 20%" id="PayMethod">Make the payment</button>
+						</div>
+				</div>
+				<div id="notif" class="text-center">
+					<h5 style="margin-top:20%">A confirmation e-mail has been sent to your inbox.</h5>
+					<br>
+					<h5>If you don't receive this e-mail or you are aware of any errors that might have occured don't hesitate to contact us.</h5>
+					<br>
+					<h5>Thanks for choosing GreenCloud!</h5>
+
+					<button type="button" class="btn btn-success btn-lg" style="width: 100%; margin-top: 20%" id="HomeButton">Home</button>
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<div class="container" style="margin-top: 5%">
+				<div class="col-md-8">
+					<h3 id="Title"></h3>
+					<p id="description"></p>
+				</div>
+		</div>
+
