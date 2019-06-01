@@ -7,6 +7,11 @@
   	background-size: cover ;
 }
 
+button, #quote {
+    animation: 1s ease-out 0s 1 slideInFromTop;
+
+}
+
 h1{
     color: white;
     font-size: 140px;
@@ -15,6 +20,20 @@ h1{
     text-decoration: underline;
 
 }
+
+@keyframes slideInFromTop {
+    0% {
+        transform: translateY(-150%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+
 
 h4{
     font-size: 30px;
