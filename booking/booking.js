@@ -112,7 +112,7 @@ $(document).ready( function() {
     });    
 
     
-    $("#filterBtn").click( function (e) {
+   $("#filterBtn").click( function (e) {
         e.preventDefault();
         let searchPrice = $("#priceState").val();
         let searchBiom = $("#biomState").val();
@@ -120,61 +120,99 @@ $(document).ready( function() {
 
         clear(viagem);
 
-
-        for (let i=0; i<catalogo.length;i++){
-            for (let j=0; j<catalogo.length;j++){
-
-                if (catalogo[i]["place"] == $("#seachInput").val().toLowerCase()){
-
-                    if (catalogo[i]["biom"] == searchBiom && catalogo[j]["activity"] == searchActivity) {
-                        viagem.push(catalogo[i]);
-                    } 
+        console.log(searchActivity + searchBiom + searchPrice)
 
 
+        if (searchActivity == "Activity" && searchBiom == "Biom" && searchPrice == "Price"){
+            searchTerm();
+        } else {
+
+            for (let i=0; i<catalogo.length;i++){
+            
+                    if (catalogo[i]["place"] == $("#seachInput").val().toLowerCase()){
+
+                        console.log(catalogo[i]["biom"])
+
+                        if (searchActivity != "Activity" && searchBiom != "Biom") {
+                            if (catalogo[i]["biom"] == searchBiom && catalogo[i]["activity"].includes(searchActivity)) {
+                                viagem.push(catalogo[i]);
+                            
+                            } 
+                        } else if (searchActivity != "Activity" && searchBiom == "Biom") {
+                            if (catalogo[i]["activity"].includes(searchActivity)) {
+                                viagem.push(catalogo[i]);
+
+                            } 
+                        } else if (searchActivity == "Activity" && searchBiom != "Biom"){
+                            if (catalogo[i]["biom"] == searchBiom) {
+                                viagem.push(catalogo[i]);
+
+                            } 
+                        } 
+
+                    }
+            }
+
+            if (searchPrice != "Price") {
+
+                if ( searchActivity == "Activity" && searchBiom == "Biom"){
+                    searchTerm();
                 }
+
+                let n = viagem().length; 
+                let empty = [];
+
+                if (searchPrice == "0"){
+                   
+                    for (let i = 0; i < n; i++) {
+                        console.log( viagem().length)
+                        if (viagem()[i]["price"] == 0 ) {
+                           empty.push(viagem()[i])
+                        }
+                    }
+                } else if (searchPrice == "1,40") {
+                    
+                    for (let i = 0; i< n; i++) {
+                        if (viagem()[i]["price"] > 0  && viagem()[i]["price"] <= 40 ) {
+                            empty.push(viagem()[i])
+                        }
+                    }
+                } else if (searchPrice == "41,100") {
+                    
+                    for (let i = 0; i< n; i++) {
+
+                        if (viagem()[i]["price"] > 40  && viagem()[i]["price"] <= 100 ) {
+                            empty.push(viagem()[i])
+
+                        }
+                    }
+
+                } else if(searchPrice == "100+") {
+                    for (let i = 0; i< n; i++) {
+                        if (catalogo[i]["price"] > 100) {
+                            empty.push(viagem()[i])
+
+                        }
+                    }
+                }
+
+                clear(viagem);
+                for (var i = 0; i < empty.length; i++) {
+                    viagem.push(empty[i]);
+                }
+
 
             }
 
-        }
+            $("#clearBtn").show()
+            $("#filterBtn").css("width","50%")
+    }
 
-        if (searchPrice == "0"){
-
-            for (let i = 0; i< viagem().length; i++) {
-               if (viagem()[i]["price"] != 0 ) {
-                   viagem.pop(catalogo[i]);
-               }
-            }
-        } else if (searchPrice == "1,40") {
-            
-            for (let i = 0; i< viagem().length; i++) {
-                if (viagem()[i]["price"] = 0  || viagem()[i]["price"] > 40 ) {
-                    viagem.pop(catalogo[i]);
-                }
-             }
-        } else if (searchPrice == "41,100") {
-            
-            for (let i = 0; i< viagem().length; i++) {
-
-                if (viagem()[i]["price"] <= 40  || viagem()[i]["price"] > 100 ) {
-                    viagem.pop(catalogo[i]);
-                }
-             }
-
-        } else if(searchPrice == "100+") {
-            for (let i = 0; i< viagem().length; i++) {
-                if (catalogo[i]["price"] <= 100) {
-                    viagem.push(catalogo[i]);
-                }
-             }
-        }
-
-        $("#clearBtn").show()
-        $("#filterBtn").css("width","50%")
+    
         clicker();
 
 
     })
-
 
     $("#clearBtn").click( function(e) {
         e.preventDefault();
