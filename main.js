@@ -7,17 +7,15 @@ var options= ko.observableArray([
     {"name": "About our investor", "url": "booking.html"}
 ]);
 
-
 $(document).ready( function() {
 
     let login = localStorage.getItem("Login");
     let name = localStorage.getItem("name");
 
-    var self= this;
-
     console.log(name);
 
     ko.applyBindings(options);
+
 
 
     setInterval(function(){
@@ -53,10 +51,11 @@ $(document).ready( function() {
         $("#login").removeClass("dropdown-toggle");
         $("#login").removeAttr("data-toggle");
         localStorage.setItem("Login",0);
+        localStorage.setItem("name",null);
+        localStorage.setItem("lname",null);
+        localStorage.setItem("email",null);
         window.location = "./index.html"
     });
 
-
-
-
-})
+  
+});
