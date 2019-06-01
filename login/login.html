@@ -19,7 +19,7 @@
 
 
                     <div id="first">
-                        <div class="myform form ">
+                        <div class="myform form " id = "FirstForm">
                             <div class="col-md-12 text-center">
                                 <img src="login_logo.png" style="width: 100%">
                             </div>
@@ -31,7 +31,7 @@
                                 <div class="form-group">
                                     <label for="password">Password</label>
                                     <input type="password" name="password" id="password"  value = "gcmasua" class="form-control" aria-describedby="emailHelp" placeholder="Enter Password">
-                                    <div class="alert alert-danger no_error" id="name_error" style="display: none">Password incorrect!</div>
+                                    <div class="alert alert-danger no_error" id="name_error" style="display: none"> </div>
 
                                 </div>
                                 <div class="form-group">
@@ -54,7 +54,7 @@
                                     </p>
                                 </div>
                                 <div class="form-group">
-                                    <p class="text-center">Don't have account? <a onclick="swithLogin()" id="signup">Sign up here</a></p>
+                                    <p class="text-center">Don't have account? <span onclick="swithLogin()" id="signup">Sign up here</span></p>
                                 </div>
                             </form>
 
@@ -63,11 +63,52 @@
 
 
                     <div id="second">
-                        <h2>oi</h2>
-                    </div>
+                        <div class="myform form " id = "SecondForm">
+                            <div class="logo mb-3">
+                                <div class="col-md-12 text-center">
+                                    <img src="login_logo.png" style="width: 100%">
+                                </div>
+                            </div>
+                            <form action="#" name="registration">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">First Name</label>
+                                    <input type="text"  name="firstname" class="form-control" id="firstname" aria-describedby="emailHelp" placeholder="Enter First Name">
+                                 </div>
+                                 <div class="form-group">
+                                    <label for="exampleInputEmail1">Last Name</label>
+                                    <input type="text"  name="lastname" class="form-control" id="lastname" aria-describedby="emailHelp" placeholder="Enter Last Name">
+                                 </div>
+                                 <div class="form-group">
+                                    <label for="exampleInputEmail1">Email address</label>
+                                    <input type="email" name="NewEmail"  class="form-control" id="NewEmail" aria-describedby="emailHelp" placeholder="Enter Email">
+                                    <div class="alert alert-danger no_error" id="email_error" style="display: none"> Email is already in use. </div>
+                                </div>
+                                 <div class="form-group">
+                                    <label for="exampleInputEmail1">Password</label>
+                                    <input type="password" name="NewPassword" id="NewPassword"  class="form-control" aria-describedby="emailHelp" placeholder="Enter Password">
+                                 </div>
 
+                                 <div class="form-group">
+                                    <label for="exampleInputEmail1">Confirm Password</label>
+                                    <input type="password" name="ConfirmPassword" id="ConfirmPassword"  class="form-control" aria-describedby="emailHelp" placeholder="Confirm Password">
+                                    <div class="alert alert-danger no_error" id="password_error" style="display: none"> Passwords don't match </div>
+ 
+                                </div>
 
+                                <div class="col-md-12 text-center mb-3">
+                                    <button id= "submit" type="submit" class=" btn btn-block mybtn btn-primary tx-tfm">Get Started For Free</button>
+                                    <div class="alert alert-danger no_error" id="blank_error" style="display: none"> Fill all the fields. </div>
 
+                                 </div>
+                                 <div class="col-md-12 ">
+                                    <div class="form-group">
+                                       <p class="text-center"><span onclick="switchSignin()" id="signin">Already have an account?</span></p>
+                                    </div>
+                                 </div>
+                                  </div>
+                              </form>
+                           </div>
+                  
 
                 </div>
             </div>
