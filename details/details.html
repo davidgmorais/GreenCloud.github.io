@@ -31,22 +31,25 @@
 					<h3 class="headingTop text-center" style="margin-top: 20%; margin-bottom: 10%">Select Your Trip's Dates</h3>	
 
 					<div class="row align-items-center justify-content-center">
-						<p>Starting date: <input type="text" class="datepicker">   <i class="fas fa-calendar-alt"></i></p>
+						<p id="s">Starting date: <input type="text" id="starting" class="datepicker">   <i class="fas fa-calendar-alt"></i></p>
 					</div>
 					<div class="row align-items-center justify-content-center">
 							<p><i class="fas fa-arrow-down"></i></p>
 					</div>
 
 					<div class="row align-items-center justify-content-center">
-						<p>Ending date: <input type="text" class="datepicker">   <i class="fas fa-calendar-alt"></i></p>
+						<p id="e">Ending date: <input type="text" id="ending" class="datepicker">   <i class="fas fa-calendar-alt"></i></p>
 					</div>
 
 					<div>
 						<h3 id="PriceTag" style="text-align : right"></h3>
 					</div>
+					<div style="margin-top: 15%">
+							<button type="button" class="btn btn-success btn-lg" style="width: 100%;" id="booking"> Book the trip</button>
 
-					<button type="button" class="btn btn-success btn-lg" style="width: 100%; margin-top: 20%" id="booking"> Book the trip</button>
-
+							<p id="error" style="color: red">*Fill the necessary fields</p>
+					</div>
+					
 
 				</div>
 				<div id="payment">
@@ -77,7 +80,8 @@
 					        </div>        
 						</div>
 						<div>
-								<button type="button" class="btn btn-success btn-lg" style="width: 100%; margin-top: 20%" id="PayMethod">Make the payment</button>
+								<button type="button" class="btn btn-default btn-lg" style="width: 100%; margin-top: 25%" id="backMethod">Go back</button>
+								<button type="button" class="btn btn-success btn-lg" style="width: 100%; margin-top: 1%" id="PayMethod">Make the payment</button>
 						</div>
 				</div>
 				<div id="notif" class="text-center">
@@ -94,7 +98,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="container" style="margin-top: 5%">
+	<div class="container" style="margin-top: 3%">
 				<div class="col-md-8">
 					<h3 id="Title"></h3>
 					<p id="description"></p>
