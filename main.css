@@ -13,7 +13,7 @@ button, #quote {
 
 h1{
     color: white;
-    font-size: 140px;
+    font-size: 10vw;
     text-decoration: underline;
 
 }
@@ -43,7 +43,7 @@ h4{
     height: 60vh;
     padding-left: 20vw;
     padding-right: 20vw;
-    padding-top: 25vh;
+    padding-top: 15vh;
 }
 
 
