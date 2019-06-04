@@ -62,19 +62,163 @@
 	<div id=main_options class="container-fluid">
 		<div class="row">
 			
-			<!-- ko foreach: options -->
 			<div class="col-lg-4 option" >
-				<a data-bind="attr: { href: url}">
-						<h4 data-bind="text: name"></h4>
+				<a href="./booking/booking.html">
+					<h4>Book a trip</h4>
 				</a>
 			</div>
-			<!-- /ko -->
+
+			<div class="col-lg-4 option" id="addLocationForm" data-toggle="modal" data-target="#addLocation" >
+				
+					<h4>Add a location</h4>
+				
+			</div>
+
+			<div class="col-lg-4 option" id="bmForm" data-toggle="modal" data-target="#becomeMember" >
+					<h4>Become a member</h4>
+			</div>
+
+			<div class="col-lg-4 option" >
+				<a href="./chat/chat.html">
+					<h4>Talk to others</h4>
+				</a>
+			</div>
+
+			<div class="col-lg-4 option" >
+				<a href="./booking/booking.html">
+					<h4>Client support</h4>
+				</a>
+			</div>
+
+			<div class="col-lg-4 option" >
+				<a href="./booking/booking.html">
+					<h4>About our investor</h4>
+				</a>
+			</div>
+
+
 
 		</div>
 
 	</div>
 
 	</div>
+
+	<div class="modal fade" id="addLocation" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+		  <div class="modal-content">
+
+			<div class="modal-body">
+				<div id="FormBody">
+					<div class="form-group">
+						<div class="row">
+							<div class="col-md-4">
+									<label for="activity">Activity</label> <br>
+									<div class="row">
+									</div>
+											<input type="checkbox" name="activity" id="activity">Hiking <br>
+											<input type="checkbox" name="activity" id="activity">BoatRide <br>
+											<input type="checkbox" name="activity" id="activity">TouristGuide <br>
+											<input type="checkbox" name="activity" id="activity">Hotel <br>
+							</div>
+							<div class="col-md-8">
+									<label for="pics">Pictures</label> <br>
+									<input type="file" id="pics" accept="image/*" multiple >
+
+							</div>
+							</div>
+						</div>
+					<div class="form-group">
+							<p >Adress</p>
+							<div class="row">
+								<div class="col-md-6">
+										<input type="text" name="Adress" id="adress"  class="form-control"  placeholder="Enter the place">
+										<div class="alert alert-danger no_error" id="name_error" style="display: none"> </div>
+								</div>
+								<div class="col-md-6">
+
+									<input type="text" name="Adress" id="city"  class="form-control"  placeholder="Enter the city">
+									<div class="alert alert-danger no_error" id="name_error" style="display: none"> </div>
+
+								</div>
+							</div>
+					</div>
+					<div class="form-group">
+						<p>Tell us why you think this location fits our website</p>
+						<textarea name="opinion" id="opinion"  class="form-control"  placeholder="Write here your opinion" rows="4"></textarea>
+					</div>
+				</div>
+				<div id="msg">
+					<h3 style="text-align: center">Thank you for submitting your experience, we will review it and if it get's accepted we will notify you by email.</h2>
+				</div>
+				<div id="notPartner">
+						<h3 style="text-align: center">Only partners can acess this part of the websites (yet).</h2>
+					</div>
+
+			</div>
+
+			<div class="modal-footer">
+			  <button class="btn" style="color: black; animation: 0s; font-size: 10px; padding: 10px; margin-top: 0px; background-color: rgb(138, 97, 97); border: 0; color: white" data-dismiss="modal">Close</button>
+			  <button class="btn" type="submit" id="submitForm" style="color: black; animation: 0s; font-size: 10px; padding: 10px; margin-top: 0px; background-color: #708C74; border: 0; color: white"> Submit</button>
+			</div>
+		  </div>
+		</div>
+	</div>
+
+
+	<div class="modal fade" id="becomeMember" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+			  <div class="modal-content">
+	
+				<div class="modal-body">
+					<div id="FormBody2">
+						<div class="form-group">
+							<div class="row">
+								<div class="col-md-6">	
+									<label for="name">Full Name:</label>
+									<input type="text" name="name" id="name" class="form-control" placeholder="Enter Name">
+
+									<label for="nr">Phone number:</label>
+									<input type="text" name="nr" id="nr" class="form-control" placeholder="Enter nr">
+								</div>
+								<div class="col-md-6">
+										<label for="file">Resumme(CV):</label> <br>
+										<input type="file" id="file" accept=".pdf, .docx, .doc, .word">
+
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+						
+									<label for="email">Email:</label>
+										<input type="email" name="email" id="email"  class="form-control"  placeholder="Enter your email">
+
+						</div>
+
+
+						<div class="form-group">
+							<label>Tell us why you think you'll be an asset to our team</label>
+							<textarea name="opinion" id="opinion"  class="form-control"  placeholder="Write here your answere" rows="4"></textarea>
+						</div>
+					</div>
+					<div id="msg2">
+						<h3 style="text-align: center">Thank you for submitting your resumme, we will review it and if you get accepted we will call you on the phone number you provided us.</h2>
+					</div>
+					
+	
+				</div>
+	
+				<div class="modal-footer">
+				  <button class="btn" style="color: black; animation: 0s; font-size: 10px; padding: 10px; margin-top: 0px; background-color: rgb(138, 97, 97); border: 0; color: white" data-dismiss="modal">Close</button>
+				  <button class="btn" type="submit" id="submitForm2" style="color: black; animation: 0s; font-size: 10px; padding: 10px; margin-top: 0px; background-color: #708C74; border: 0; color: white"> Submit</button>
+				</div>
+			  </div>
+			</div>
+		</div>
+
+
+
 
 	
 
