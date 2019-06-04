@@ -4,20 +4,24 @@ $(document).ready( function() {
                         "e-mail": "greencloud@ua.pt",
                         "password": "gcmasua",
                         "name": "Admin",
-                        "lname": ""
+                        "lname": "",
+                        "partner": true
                     },
                     {
                         "e-mail": "master@ua.pt",
                         "password": "1234",
                         "name": "system",
-                        "lname": ""
+                        "lname": "",
+                        "partner": true
+
 
                     },
                     {
                         "e-mail": "marianaladeiro@ua.pt",
                         "password": "luissantos",
                         "name": "Mariana",
-                        "lname": "Ladeiro"
+                        "lname": "Ladeiro",
+                        "partner": true
 
                     }
                 ]
@@ -29,6 +33,8 @@ $(document).ready( function() {
                 localStorage.setItem("name",users[i]["name"]);
                 localStorage.setItem("email",users[i]["e-mail"]);
                 localStorage.setItem("lname",users[i]["lname"]);
+                localStorage.setItem("partner",users[i]["partner"]);
+                
                 
 
 
@@ -51,7 +57,6 @@ $(document).ready( function() {
                 $("#name_error").hide();
                 $("#name_error").addClass('no_error');
                 localStorage.setItem("Login",1);
-
 
                 if (state == 2){
                     window.location = "../details/details.html"
