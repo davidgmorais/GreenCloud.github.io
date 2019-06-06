@@ -1,0 +1,91 @@
+#background {
+    background-image: url("../PlantsHeader.jpg");
+  height: 100vh;
+  margin: 0;
+    background-repeat: no-repeat;
+  background-size: cover ;
+}
+
+
+#home, #mytext, #arrow_box {
+  animation: 1s ease-out 0s 1 slideInFromTop;
+
+}
+
+@keyframes slideInFromTop {
+  0% {
+      transform: translateY(-150%);
+      opacity: 0;
+  }
+  100% {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+h1{
+  color: white;
+  font-size: 10vw;
+ 
+  text-decoration: underline;
+
+}
+
+
+.btn {
+	letter-spacing: 1px;
+	text-decoration: none;
+	background: none;
+    -moz-user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 0;
+    cursor: pointer;
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+    white-space: nowrap;
+	font-size:16px;
+	line-height:20px;
+	font-weight:700;
+	text-transform:uppercase;
+	border: 3px solid;
+	padding:8px 20px;
+    margin-top: 1vh;
+    padding: 1vw;
+}
+
+.btn-outlined {
+    border-radius: 0;
+    -webkit-transition: all 0.3s;
+       -moz-transition: all 0.3s;
+            transition: all 0.3s;
+}
+
+
+.btn-outlined.btn-white {
+    background: none;
+    color: #FFFFFF;
+	border-color: #FFFFFF;
+}
+
+.btn-outlined.btn-white:hover,
+.btn-outlined.btn-white:active {
+    color: #708C74;
+    background: #FFFFFF;
+    border-color: #FFFFFF;
+}
+
+#main_text{
+  background-color: #708C74;
+  height: 30vh;
+  padding-left: 20vw;
+  padding-right: 20vw;
+  padding-top: 5vw;
+}
+
+#main {
+  padding-left: 0vw;
+  padding-right: 0vw;
+  padding-top: 5vw;
+}
