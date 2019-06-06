@@ -1,53 +1,67 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>GreenCloud</title>
 
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+		integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+		integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+		integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+		crossorigin="anonymous"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<link rel="icon" href="./GreenCloud_iconb.png">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+		integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.2.0/knockout-min.js"></script>
 	<script type="text/javascript" src="./main.js"></script>
 	<link rel="stylesheet" type="text/css" href="main.css">
 
 </head>
+
 <body>
 	<div id="main_background" class="container-fluid">
 		<div class="row" id="info">
 			<div class="col-md-2">
 				<div id="botao" class="dropdown">
-					<button id="login" class="btn btn-outlined btn-white btn-lg"  data-wow-delay="0.7s"><i class="fa fa-user" aria-hidden="true"></i> Account</button>
+					<button id="login" class="btn btn-outlined btn-white btn-lg" data-wow-delay="0.7s"><i
+							class="fa fa-user" aria-hidden="true"></i> Account</button>
 					<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-	    				<a class="dropdown-item" href="#"><i class="fa fa-user" aria-hidden="true"></i> Profile</a>
-	    				<a class="dropdown-item" href="#"><i class="fas fa-bell"></i> Notification</a>
-	    				<a class="dropdown-item" id="logout" href="#"><i class="fas fa-sign-out-alt"></i> Log Out</a>
-	  				</div>
+						<a class="dropdown-item" href="#"><i class="fa fa-user" aria-hidden="true"></i> Profile</a>
+						<a class="dropdown-item" href="#"><i class="fas fa-bell"></i> Notification</a>
+						<a class="dropdown-item" id="logout" href="#"><i class="fas fa-sign-out-alt"></i> Log Out</a>
+					</div>
 				</div>
 			</div>
 			<div class="col-md-8"></div>
 			<div class="col-md-1">
-				<button  class="btn btn-outlined btn-white btn-lg" data-wow-delay="0.7s" > Contact</button>
+				<button class="btn btn-outlined btn-white btn-lg info" data-wow-delay="0.7s"> Contact</button>
 			</div>
 
 			<div class="col-md-1">
-				<button  class="btn btn-outlined btn-white btn-lg" data-wow-delay="0.7s" > About</button>
+				<button class="btn btn-outlined btn-white btn-lg info" data-wow-delay="0.7s"> About</button>
 			</div>
 		</div>
 		<div class="text-center" style="margin-top: 20vh ">
-			<h1 >GreenCloud</h1>
-			<button id="arrow_box" style="position: absolute; left: 50vw; margin-top: 35vh" class="btn btn-outlined btn-white btn-lg" data-wow-delay="0.7s" style=" position: absolute; right: 8vw"> <i id="arrow" class="fas fa-angle-double-down"></i></button>
+			<h1>GreenCloud</h1>
+			<button id="arrow_box" style="position: absolute; left: 50vw; margin-top: 0vh"
+				class="btn btn-outlined btn-white btn-lg" data-wow-delay="0.7s" style=" position: absolute; right: 8vw">
+				<i id="arrow" class="fas fa-angle-double-down"></i></button>
 
 
 		</div>
 		<div class="row">
 			<div class="col-md-6">
-			<h3 id="quote" style="color: white; margin-top: 35vh; margin-left: 1vw">"In a world full of noise, stress and virtual connections,<br> our goal is to create a bond with nature."</h3>
+				<h3 id="quote" style="color: white; margin-top: 35vh; margin-left: 1vw">"In a world full of noise,
+					stress and virtual connections,<br> our goal is to create a bond with nature."</h3>
 			</div>
 			<div class="cold-md-2">
 			</div>
@@ -55,45 +69,40 @@
 
 	</div>
 	<div id=main_text class="container-fluid">
-		<h4> Created in 2019 in a small city in Portugal, GreenCloud's goal is to connect you to Nature through amazing and breath-taking experiences of your choice. </h4>
+		<h4> Created in 2019 in a small town in Portugal, GreenCloud's goal is to connect you to Nature through amazing
+			and breath-taking experiences of your choice. </h4>
 	</div>
 	<br>
 
 	<div id=main_options class="container-fluid">
 		<div class="row">
-			
-			<div class="col-lg-4 option" >
+
+			<div class="col-lg-4 option">
 				<a href="./booking/booking.html">
 					<h4>Book a trip</h4>
 				</a>
 			</div>
 
-			<div class="col-lg-4 option" id="addLocationForm" data-toggle="modal" data-target="#addLocation" >
-				
-					<h4>Add a location</h4>
-				
+			<div class="col-lg-4 option" id="addLocationForm" data-toggle="modal" data-target="#addLocation">
+
+				<h4>Add a location</h4>
+
 			</div>
 
-			<div class="col-lg-4 option" id="bmForm" data-toggle="modal" data-target="#becomeMember" >
-					<h4>Become a member</h4>
+			<div class="col-lg-4 option" id="bmForm" data-toggle="modal" data-target="#becomeMember">
+				<h4>Become a member</h4>
 			</div>
 
-			<div class="col-lg-4 option" >
-				<a href="./chat/chat.html">
-					<h4>Talk to others</h4>
-				</a>
+			<div class="col-lg-4 option" id="chatScreen" data-toggle="modal" data-target="#chat">
+				<h4>Talk to others</h4>
 			</div>
 
-			<div class="col-lg-4 option" >
-				<a href="#">
+			<div class="col-lg-4 option info">
 					<h4>Client support</h4>
-				</a>
 			</div>
 
-			<div class="col-lg-4 option" >
-				<a href="#">
+			<div class="col-lg-4 option info">
 					<h4>About our investor</h4>
-				</a>
 			</div>
 
 
@@ -106,121 +115,193 @@
 
 	<div class="modal fade" id="addLocation" tabindex="-1" role="dialog" aria-hidden="true">
 		<div class="modal-dialog" role="document">
-		  <div class="modal-content">
+			<div class="modal-content">
 
-			<div class="modal-body">
-				<div id="FormBody">
-					<div class="form-group">
-						<div class="row">
-							<div class="col-md-4">
+				<div class="modal-body">
+					<div id="FormBody">
+						<div class="form-group">
+							<div class="row">
+								<div class="col-md-4">
 									<label for="activity">Activity</label> <br>
 									<div class="row">
 									</div>
-											<input type="checkbox" name="activity" id="activity">Hiking <br>
-											<input type="checkbox" name="activity" id="activity">BoatRide <br>
-											<input type="checkbox" name="activity" id="activity">TouristGuide <br>
-											<input type="checkbox" name="activity" id="activity">Hotel <br>
-							</div>
-							<div class="col-md-8">
+									<input type="checkbox" name="activity" id="activity">Hiking <br>
+									<input type="checkbox" name="activity" id="activity">BoatRide <br>
+									<input type="checkbox" name="activity" id="activity">TouristGuide <br>
+									<input type="checkbox" name="activity" id="activity">Hotel <br>
+								</div>
+								<div class="col-md-8">
 									<label for="pics">Pictures</label> <br>
-									<input type="file" id="pics" accept="image/*" multiple >
+									<input type="file" id="pics" accept="image/*" multiple>
 
-							</div>
+								</div>
 							</div>
 						</div>
-					<div class="form-group">
-							<p >Adress</p>
+						<div class="form-group">
+							<p>Adress</p>
 							<div class="row">
 								<div class="col-md-6">
-										<input type="text" name="Adress" id="adress"  class="form-control"  placeholder="Enter the place">
-										<div class="alert alert-danger no_error" id="name_error" style="display: none"> </div>
+									<input type="text" name="Adress" id="adress" class="form-control"
+										placeholder="Enter the place">
+									<div class="alert alert-danger no_error" id="name_error" style="display: none">
+									</div>
 								</div>
 								<div class="col-md-6">
 
-									<input type="text" name="Adress" id="city"  class="form-control"  placeholder="Enter the city">
-									<div class="alert alert-danger no_error" id="name_error" style="display: none"> </div>
+									<input type="text" name="Adress" id="city" class="form-control"
+										placeholder="Enter the city">
+									<div class="alert alert-danger no_error" id="name_error" style="display: none">
+									</div>
 
 								</div>
 							</div>
+						</div>
+						<div class="form-group">
+							<p>Tell us why you think this location fits our website</p>
+							<textarea name="opinion" id="opinion" class="form-control"
+								placeholder="Write here your opinion" rows="4"></textarea>
+						</div>
 					</div>
-					<div class="form-group">
-						<p>Tell us why you think this location fits our website</p>
-						<textarea name="opinion" id="opinion"  class="form-control"  placeholder="Write here your opinion" rows="4"></textarea>
+					<div id="msg">
+						<h3 style="text-align: center">Thank you for submitting your experience, we will review it and
+							if it get's accepted we will notify you by email.</h2>
 					</div>
-				</div>
-				<div id="msg">
-					<h3 style="text-align: center">Thank you for submitting your experience, we will review it and if it gets accepted we will notify you by email.</h2>
-				</div>
-				<div id="notPartner">
+					<div id="notPartner">
 						<h3 style="text-align: center">Only partners can acess this part of the websites (yet).</h2>
 					</div>
 
-			</div>
+				</div>
 
-			<div class="modal-footer">
-			  <button class="btn" style="color: black; animation: 0s; font-size: 10px; padding: 10px; margin-top: 0px; background-color: rgb(138, 97, 97); border: 0; color: white" data-dismiss="modal">Close</button>
-			  <button class="btn" type="submit" id="submitForm" style="color: black; animation: 0s; font-size: 10px; padding: 10px; margin-top: 0px; background-color: #708C74; border: 0; color: white"> Submit</button>
+				<div class="modal-footer">
+					<button class="btn"
+						style="color: black; animation: 0s; font-size: 10px; padding: 10px; margin-top: 0px; background-color: rgb(138, 97, 97); border: 0; color: white"
+						data-dismiss="modal">Close</button>
+					<button class="btn" type="submit" id="submitForm"
+						style="color: black; animation: 0s; font-size: 10px; padding: 10px; margin-top: 0px; background-color: #708C74; border: 0; color: white">
+						Submit</button>
+				</div>
 			</div>
-		  </div>
 		</div>
 	</div>
 
 
 	<div class="modal fade" id="becomeMember" tabindex="-1" role="dialog" aria-hidden="true">
-			<div class="modal-dialog" role="document">
-			  <div class="modal-content">
-	
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+
 				<div class="modal-body">
 					<div id="FormBody2">
 						<div class="form-group">
 							<div class="row">
-								<div class="col-md-6">	
+								<div class="col-md-6">
 									<label for="name">Full Name:</label>
-									<input type="text" name="name" id="name" class="form-control" placeholder="Enter Name">
+									<input type="text" name="name" id="name" class="form-control"
+										placeholder="Enter Name">
 
 									<label for="nr">Phone number:</label>
 									<input type="text" name="nr" id="nr" class="form-control" placeholder="Enter nr">
 								</div>
 								<div class="col-md-6">
-										<label for="file">Resumme(CV):</label> <br>
-										<input type="file" id="file" accept=".pdf, .docx, .doc, .word">
+									<label for="file">Resumme(CV):</label> <br>
+									<input type="file" id="file" accept=".pdf, .docx, .doc, .word">
 
 								</div>
 							</div>
 						</div>
 
 						<div class="form-group">
-						
-									<label for="email">Email:</label>
-										<input type="email" name="email" id="email"  class="form-control"  placeholder="Enter your email">
+
+							<label for="email">Email:</label>
+							<input type="email" name="email" id="email" class="form-control"
+								placeholder="Enter your email">
 
 						</div>
 
 
 						<div class="form-group">
 							<label>Tell us why you think you'll be an asset to our team</label>
-							<textarea name="opinion" id="opinion"  class="form-control"  placeholder="Write here your answere" rows="4"></textarea>
+							<textarea name="opinion" id="opinion" class="form-control"
+								placeholder="Write here your answere" rows="4"></textarea>
 						</div>
 					</div>
 					<div id="msg2">
-						<h3 style="text-align: center">Thank you for submitting your resumme, we will review it and if you get accepted we will call you on the phone number you provided us.</h2>
+						<h3 style="text-align: center">Thank you for submitting your resumme, we will review it and if
+							you get accepted we will call you on the phone number you provided us.</h2>
 					</div>
-					
-	
+
+
 				</div>
-	
+
 				<div class="modal-footer">
-				  <button class="btn" style="color: black; animation: 0s; font-size: 10px; padding: 10px; margin-top: 0px; background-color: rgb(138, 97, 97); border: 0; color: white" data-dismiss="modal">Close</button>
-				  <button class="btn" type="submit" id="submitForm2" style="color: black; animation: 0s; font-size: 10px; padding: 10px; margin-top: 0px; background-color: #708C74; border: 0; color: white"> Submit</button>
+					<button class="btn"
+						style="color: black; animation: 0s; font-size: 10px; padding: 10px; margin-top: 0px; background-color: rgb(138, 97, 97); border: 0; color: white"
+						data-dismiss="modal">Close</button>
+					<button class="btn" type="submit" id="submitForm2"
+						style="color: black; animation: 0s; font-size: 10px; padding: 10px; margin-top: 0px; background-color: #708C74; border: 0; color: white">
+						Submit</button>
 				</div>
-			  </div>
 			</div>
 		</div>
+	</div>
 
 
 
 
-	
 
-</body>	
+
+	<div class="modal fade" id="chat" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog  modal-lg" role="document">
+			<div class="modal-content">
+
+
+				<div class="modal-header">
+					<button style="animation: 0s " type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+
+
+				<div class="modal-body">
+					<div id="FormBody3">
+
+						<div>
+							<ul id="frame">
+							</ul>
+						</div>
+
+						<div>
+							<div class="row">
+								<div class="col-md-9">
+									<input type="text" id="mytext" placeholder="Type message" class="form-control">
+
+								</div>
+								<div class="col-md-3">
+									<button type="btn" id="send" style="animation: 0s"
+										class="form-control">Send</button>
+
+								</div>
+
+								<div>
+								</div>
+
+
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+
+
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+</body>
+
 </html>
