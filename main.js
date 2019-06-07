@@ -156,6 +156,11 @@ $(document).ready(function () {
     $(".info").click( function(){
         window.location = "./info/info.html"
     })
+    
+     $("#profileButton").click( function() {
+        window.location = "./profile/profile.html";
+    })
+
 
 
 });
