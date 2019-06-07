@@ -14,8 +14,6 @@ button, #quote {
 h1{
     color: white;
     font-size: 10vw;
-    /* text-align: center;
-    transform: translate(0%, 35vh); */
     text-decoration: underline;
 
 }
@@ -42,10 +40,11 @@ h4{
 
 #main_text{
     background-color: #708C74;
-    height: 60vh;
     padding-left: 20vw;
     padding-right: 20vw;
-    padding-top: 15vw;
+    padding-top: 11vw;
+    padding-bottom: 11vw;
+
 }
 
 
