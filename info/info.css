@@ -17,6 +17,7 @@
       transform: translateY(-150%);
       opacity: 0;
   }
+
   100% {
       transform: translateY(0);
       opacity: 1;
@@ -26,10 +27,11 @@
 h1{
   color: white;
   font-size: 10vw;
- 
   text-decoration: underline;
 
 }
+
+
 
 
 .btn {
@@ -89,3 +91,4 @@ h1{
   padding-right: 0vw;
   padding-top: 5vw;
 }
+
