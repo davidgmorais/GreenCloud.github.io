@@ -1,4 +1,3 @@
-
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
@@ -25,7 +24,7 @@
 </tbody></table>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">BookTrip</td></tr>
+<tr><td rowspan="1" colspan="3">BookTrip(Logged In)</td></tr>
 </thead>
 <tbody>
 <tr><td>open</td><td>https://davidgmorais.github.io/GreenCloud.github.io/index.html<datalist><option>https://davidgmorais.github.io/GreenCloud.github.io/index.html</option></datalist></td><td></td>
@@ -111,7 +110,43 @@
 <tr><td>click</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)=concat('Tell us why you think you', "'", 'll be an asset to our team')])[1]/following::button[1]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)=concat('Tell us why you think you', "'", 'll be an asset to our team')])[1]/following::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Email:'])[1]/following::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Submit'])[2]/preceding::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='×'])[1]/preceding::button[2]</option><option>//div[@id='becomeMember']/div/div/div[2]/button</option><option>//div[5]/div/div/div[2]/button</option><option>css=#becomeMember &gt; div.modal-dialog &gt; div.modal-content &gt; div.modal-footer &gt; button.btn</option></datalist></td><td></td>
 </tr>
 </tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">LogOut</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://davidgmorais.github.io/GreenCloud.github.io/index.html<datalist><option>https://davidgmorais.github.io/GreenCloud.github.io/index.html</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=login<datalist><option>id=login</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Contact'])[1]/preceding::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='About'])[1]/preceding::button[2]</option><option>//button[@id='login']</option><option>//div[@id='botao']/button</option><option>//button</option><option>css=#login</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=logout<datalist><option>id=logout</option><option>link=Log Out</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Admin'])[1]/following::a[3]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Contact'])[1]/preceding::a[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='About'])[1]/preceding::a[1]</option><option>//a[contains(text(),'Log Out')]</option><option>//a[@id='logout']</option><option>//div[@id='botao']/div/a[3]</option><option>xpath=(//a[contains(@href, '#')])[3]</option><option>//a[3]</option><option>css=#logout</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">BookTrip(Logged Out)</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://davidgmorais.github.io/GreenCloud.github.io/index.html<datalist><option>https://davidgmorais.github.io/GreenCloud.github.io/index.html</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//div[@id='main_options']/div/div/a/h4<datalist><option>//div[@id='main_options']/div/div/a/h4</option><option>//a/h4</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Clear'])[1]/following::img[5]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Clear'])[1]/following::img[5]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Filter'])[1]/following::img[5]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='No results were found!'])[1]/preceding::img[1]</option><option>//img[@title='Viagem de Moliceiro + hotel']</option><option>//div[5]/a/img</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=starting<datalist><option>id=starting</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)=concat('Select Your Trip', "'", 's Dates')])[1]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Book the trip'])[1]/preceding::input[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Select Your Payment Method'])[1]/preceding::input[2]</option><option>//input[@id='starting']</option><option>//p[@id='s']/input</option><option>//input</option><option>css=#starting</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>link=4<datalist><option>link=4</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Sa'])[1]/following::a[4]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Fr'])[1]/following::a[4]</option><option>//a[contains(text(),'4')]</option><option>//div[@id='ui-datepicker-div']/table/tbody/tr[2]/td[3]/a</option><option>xpath=(//a[contains(@href, '#')])[4]</option><option>//td[3]/a</option><option>css=a.ui-state-default.ui-state-hover</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=ending<datalist><option>id=ending</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)=concat('Select Your Trip', "'", 's Dates')])[1]/following::input[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Book the trip'])[1]/preceding::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Select Your Payment Method'])[1]/preceding::input[1]</option><option>//input[@id='ending']</option><option>//p[@id='e']/input</option><option>//div[3]/p/input</option><option>css=#ending</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>link=6<datalist><option>link=6</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Sa'])[1]/following::a[6]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Fr'])[1]/following::a[6]</option><option>//a[contains(text(),'6')]</option><option>//div[@id='ui-datepicker-div']/table/tbody/tr[2]/td[5]/a</option><option>xpath=(//a[contains(@href, '#')])[6]</option><option>//td[5]/a</option><option>css=a.ui-state-default.ui-state-hover</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=booking<datalist><option>id=booking</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)=concat('Select Your Trip', "'", 's Dates')])[1]/following::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Select Your Payment Method'])[1]/preceding::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Go back'])[1]/preceding::button[1]</option><option>//button[@id='booking']</option><option>//div[@id='price']/div[5]/button</option><option>//button</option><option>css=#booking</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=email<datalist><option>id=email</option><option>name=email</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Email address'])[1]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Password'])[1]/preceding::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Login'])[1]/preceding::input[2]</option><option>//input[@id='email']</option><option>//div[@id='FirstForm']/form/div/input</option><option>//input</option><option>css=#email</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=password<datalist><option>id=password</option><option>name=password</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Password'])[1]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Email address'])[1]/following::input[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Login'])[1]/preceding::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='or'])[1]/preceding::input[1]</option><option>//input[@id='password']</option><option>//div[@id='FirstForm']/form/div[2]/input</option><option>//div[2]/input</option><option>css=#password</option></datalist></td><td>gs</td>
+</tr>
+</tbody></table>
 </body>
 </html>
-GreenCloud.html
-A apresentar GreenCloud.html.
