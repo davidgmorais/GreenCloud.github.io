@@ -78,10 +78,10 @@ h1{
 
 #main_text{
   background-color: #708C74;
-  height: 30vh;
   padding-left: 20vw;
   padding-right: 20vw;
   padding-top: 5vw;
+  padding-bottom: 5vw;
 }
 
 #main {
