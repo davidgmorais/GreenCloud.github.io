@@ -101,7 +101,7 @@ h4{
 }
 
 #frame {
-    height: 70vh;
+    height:70vh;
     list-style: none; 
     overflow: scroll;
     overflow-x: hidden;
